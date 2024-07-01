@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Registration
+    </title>
+    <style>
+        .background {
+            background: 
+                linear-gradient(60deg, rgba(157, 118, 194, 0.6), rgba(206, 164, 96, 0.6)),
+                url("file:///C:/Users/sangi/Downloads/freepik-export-20240701141354o8gh.jpeg");
+            background-size: cover;
+            height: 100vh;
+            margin: 0;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;         
+            
+        }
+        .heading{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;   
+            font-size: medium;      
+            font-family: Anton SC;
+            
+        }
+        .foot{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;   
+            font-size: medium;      
+            font-family: Anton SC;
+            font-weight: bold;
+            
+        }
+        .forms{
+            padding: 20px;
+            border: 2px solid white;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 75%;
+            width: 70%;
+            
+            
+
+        }
+        .forms2{
+
+            padding: 20px;
+        }
+    </style>
+</head>
+<body class="background">
+    <div class="heading">
+        <h1>Way to your dream Destination!</h1>
+    </div>
+    <div class="forms">
+        <form class="forms2 heading" action="contact us.php">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required minlength="4" placeholder="John"><br><br>
+            </div>
+            <div>
+                <lable for="DOB">Date of Birth</lable>
+                <input type="date" id="date" name="date" required min="01-01-2007"><br><br>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="0000000000"><br><br>
+            </div>
+            <div>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" placeholder="xyz__@gmail.com"><br><br>
+            </div>
+            <div>
+                <label for="Gender">Gender:</label>
+                <select id="Gender" name="Gender" required>
+                    <option value="MALE">M</option>
+                    <option value="FEMALE">F</option>            
+                </select><br><br>
+            </div>  
+            <div>
+                <lable for="Destination">Destination</lable>
+                <select id="Destination" name="Destination" required>
+                    <option value="France">France</option>
+                    <option value=" Spain"> Spain</option>
+                    <option value="United States">United States</option>
+                    <option value="Italy"> Italy</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Austria">Austria</option>
+                    <br><br>
+                </select>
+            </div> 
+            <div>
+                <br>
+                <label for="Journey date">Journey date :</label>
+                <input type="date" name="date" required><br><br>
+            </div>
+            <div>
+                <br>
+                <label for="Return date">Rourney date :</label>
+                <input type="date" name="date" required><br><br>
+            </div>
+            <div>
+                <br>
+                <label for="Your photograph">Your photograph</label>
+                <input type="file" accept="image/*, text/*" name="file"/><br><br>
+            </div>
+            <div>
+                <lable for="Identification document">Identification</lable>
+                <select id="Identification" name="Identification" required>
+                    <option value="Aadhar-card">Aadhar-card</option>
+                    <option value=" Voter-card">Voter-card</option>
+                    <option value="Pan-card">Pan-card</option>
+                    <option value="Driving-license">Driving-license</option>
+                    <option value="Passport">Passport</option>
+                    <br><br>
+                </select>
+            </div>
+            <div>
+                <br>
+                <label for="Aadhar number">Aadhar number : </label>
+                <input type="number" name="number" required placeholder="xxxx-xxxx-xxxx"><br><br>
+            </div>
+
+            <input type="submit" value="Submit">
+            
+    </form>
+    </div>
+    <div class="foot">
+        <h2>Enjoy Your Journey !</h2>
+    </div>
+</body>
